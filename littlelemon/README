@@ -1,0 +1,100 @@
+# Little Lemon Bistro Django Project
+
+The Little Lemon Bistro Django project! This README will guide you through the project setup, features, and how to run and test the application.
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Overview
+
+The Little Lemon Bistro Django project is a web application for a local neighborhood bistro. It includes features such as a homepage, about page, booking functionality, menu display, and detailed menu item pages. The project aims to provide a convenient and connected experience for the bistro's customers.
+
+## Features
+
+1. **Homepage (`home`):** A welcoming landing page for users.
+2. **About Page (`about`):** Information about the bistro and its owners.
+3. **Booking Page (`book`):** Allows users to make reservations.
+4. **Menu Page (`menu`):** Displays a list of menu items.
+5. **Menu Item Page (`menu_item/<int:pk>/`):** Detailed page for each menu item.
+
+
+
+## Installation
+
+Follow these steps to set up the Little Lemon Bistro Django project:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/{https://github.com/doofenzs}/little-lemon-bistro.git
+
+1. Navigate to the project directory:
+
+```bash
+    cd little-lemon-bistro
+
+
+2. Create a virtual environment:
+
+```bash
+    python -m venv venv
+
+
+3. Activate the virtual environment:
+
+On Windows:
+
+```bash
+    .\venv\Scripts\activate
+
+. On macOS/Linux:
+
+```bash
+    source venv/bin/activate
+
+
+4. Install dependencies:
+
+```bash
+    pip install -r requirements.txt
+
+
+5. Run migrations:
+
+```bash
+    python manage.py makemigrations
+    python manage.py migrate
+
+
+
+**Usage:**
+
+1. Run the development server:
+
+```bash
+    python manage.py runserver
+
+
+2. Access the application:
+
+Open your browser and go to http://127.0.0.1:8000/. You can explore the different pages:
+
+Home: http://127.0.0.1:8000/
+About: http://127.0.0.1:8000/about/
+Booking: http://127.0.0.1:8000/book/
+Menu: http://127.0.0.1:8000/menu/
+
+
+3. Access the admin panel:
+
+Create a superuser:
+
+```bash
+    python manage.py createsuperuser
+Follow the prompts to set a username, email, and password. Then, go to http://127.0.0.1:8000/admin/ and log in with the superuser credentials.
